@@ -1,0 +1,15 @@
+answer=input("Initiate glycolysis?  (yes/no)  ")
+
+if answer.lower().strip() == "yes" :
+    answer=input("Very Good! Let's get started. A phosphate group is transferred from ATP to glucose. What does ATP become? ___").strip()
+    if answer == "ADP" :
+        answer = input("That's correct. What does the glucose become?Glucose-?-phosphate")
+        if answer.strip() == "Glucose-6-phosphate":
+            print("Correct.")
+
+    else:
+        print("Incorrect.Please try again.")
+else:
+    print("That's too bad. Would you like to initiate Kreb's cycle? (yes/no)")
+    
+#to be updated
